@@ -15,6 +15,7 @@ export const Container = styled.div<ContainerProps>`
   padding:10px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 `
 type IconProps = {
   opacity?: number,
@@ -22,5 +23,6 @@ type IconProps = {
 
 export const Icon = styled.img<IconProps>`
 opacity:{prop => prop.opacity ?? 1}
-max-width: 100px;
+max-width: 100%;
+height: auto;
 `

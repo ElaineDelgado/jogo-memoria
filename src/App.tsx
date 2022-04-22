@@ -1,6 +1,6 @@
 import React from 'react'
 import * as C from './App.styles'
-import logo from './assets/logo.png'
+import logo from './assets/logo2.png'
 import InfoItem from './components/InfoItem'
 import Button from './components/Button'
 import RestartIcon from './svgs/restart.svg'
@@ -110,10 +110,10 @@ function App() {
   return (
     <C.Wrapper>
       <C.Header>
-          <C.LogoLink href="">
-            <img src={logo} width="550" alt="Logo texto devMemory" />
+          <C.LogoHeader >
+            <img src={logo} alt="Logo texto devMemory" />
             <h1 className="sr-only">Jogo da memória</h1>
-          </C.LogoLink>
+          </C.LogoHeader>
       </C.Header>
       <C.Container>
         <C.Info>
